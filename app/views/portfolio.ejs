@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <!--SECTION HEADER-->
+    <header id="page-header">
+        <a href="#page-header"> <img class="page-header__img-profile" src="/img/profile.png" alt="Photo de profil de Romane">
+            
+        <nav class="page-header__navigation">
+            <ul class="page-header__navigation-list">
+                <a id="closeBtn" href="#" class="close">×</a>
+                <li class="page-header__navigation-list-item"><a href="#page-header" class="page-header__navigation-link">Accueil</a></li>
+                <li class="page-header__navigation-list-item"><a href="#about" class="page-header__navigation-link">À propos</a></li>
+                <li class="page-header__navigation-list-item"><a href="#project" class="page-header__navigation-link">Projets</a></li>
+                <li class="page-header__navigation-list-item"><a href="#contact" class="page-header__navigation-link">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <div class="menu-toggle" id="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    
+        <!--SECTION MAIN-->
+        <main id="home">
+            <div class="main-content">
+                <img class="main-content__img-profile" src="/img/profile.png" alt="Photo de profil de Romane">
+                <h1 class="main-content__title">Romane Baï</h1>
+                <h2 class="main-content__subtitle">Développeur web fullstack javascript</h2>
+                <p class="main-content__resume">Je suis à la recherche d’un poste de <span>développeur fullstack</span> pour compléter mes compétences et vivre de nouvelles expériences dans une entreprise incroyable.</p>
+            </div>
+            <section class="main-skill__section">
+                <div class="main-skill__container">
+                    <div class="main-skill__item">
+                        <h1 class="main-skill__item-title">Front-end</h1>
+                        <h2 class="main-skill__item-subtitle">HTML, CSS, SCSS, Javascript, React, Bulma, Vite, Typescript</h2>
+                    </div>
+                    <div class="main-skill__item">
+                        <h1 class="main-skill__item-title">Back-end</h1>
+                        <h2 class="main-skill__item-subtitle">NodeJS, Express, Sequelize, MVC, POO, Docker, regEX</h2>
+                    </div>
+                    <div class="main-skill__item">
+                        <h1 class="main-skill__item-title">Base de données</h1>
+                        <h2 class="main-skill__item-subtitle">PostgreSQL <br> MongoDB</h2>
+                    </div>
+                    <div class="main-skill__item">
+                        <h1 class="main-skill__item-title">Travail d'équipe</h1>
+                        <h2 class="main-skill__item-subtitle">Agile, Scrum, Git, Github, Slack, Discord</h2>
+                    </div>
+                    <div class="main-skill__item">
+                        <h1 class="main-skill__item-title">Spécialisation Data</h1>
+                        <h2 class="main-skill__item-subtitle">Redis, GraphQL</h2>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!--SECTION ABOUT-->
+        <section id="about">
+            <div class="about-resume">
+                <a href="#page-header"><img class="about__img-profile" src="/img/profile.png" alt="Photo de profil Romane"></a>
+                <h1 class="about-title">A propos de moi</h1>
+                <p>Je m’appelle Romane, j’ai 28 ans et <br> je suis <span>Développeuse Web Fullstack.</span> <br> Pendant plusieurs années dans le Retail et avant ça dans la santé et le social, j’ai compris que pour m’épanouir je devais me concentrer sur 2 domaines particulier :
+                </p>
+                <p class="about_text-important">La technologie et la créativité</p>
+                <p>D’une nature curieuse, j’aime apprendre de nouvelles choses et me surpasser, c’est pourquoi je pense être une candidate idéale pour ce métier qui allie les deux domaines cités. <br> Je suis disponible pour vos propositions:  j’aimerais trouver une entreprise qui prône le bien être des employés et le travail d’équipe bienveillant.
+                </p>
+                <p class="about_text-contact">N’hésitez pas à me contacter via la section de contact. </p>
+            </div>
+            <div class="about-curriculum">
+                <h2 class="about-curriculum__title">Mon CV</h2>
+                <img class="about-curriculum__img" src="img/cvromane.png" alt="jpeg du cv">
+                <h2 id="download"><a href="./img/cvromane.pdf" target="_blank" >Téléchargez mon CV</a></h2>
+            </div>
+        </section>
+        
+        <!--SECTION PROJETS-->
+        <section id="project">
+            <div class="project-container">
+                <h1 class="project-title">Mes projets</h1>
+                <ul class="project-container__navigation">
+                    <li>
+                        <a class="project-link" href="">
+                            <figure class="project-figure">
+                                <img class="project-img" src='/img/project/creasand.jpg'>
+                                <figcaption class="project-figcaption">Les créas de Sand</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="project-link" href="">
+                            <figure class="project-figure">
+                                <img class="project-img" src='/img/project/dinodiner.jpg'>
+                                <figcaption class="project-figcaption">Dino Diner</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="project-link" href="">
+                            <figure class="project-figure">
+                                <img class="project-img" src='/img/project/coffee.jpg'>
+                                <figcaption class="project-figcaption">Coffee Kat</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+
+         <!--SECTION CONTACT-->
+         <section id="contact">
+
+            <div class="contact-container" id="contact-container">
+                <h1 class="contact-title">Contact</h1>
+                <form class="contact-form">
+                    <div class="contact-form__item">
+                        <label for="name" class="contact-form__label"></label>
+                        <input type="text" id="name" class="contact-form__input" placeholder="Votre nom">
+                        <p id="errorName">Le nom est incorrect.</p>
+                    </div>
+                    <div class="contact-form__item">
+                        <label for="email" class="contact-form__label"></label>
+                        <input type="email" id="email" class="contact-form__input" placeholder="Votre email">
+                        <p id="errorEmail">L'email est incorrect.</p>
+                    </div>
+                    <div class="contact-form__item">
+                        <label for="message" class="contact-form__label"></label>
+                        <textarea id="message" class="contact-form__input message" placeholder="Votre message"></textarea>
+                        <p id="errorMessage">Le message est incorrect.</p>
+                    </div>
+                    <button class="contact-form__submit">Envoyer</button>
+                </form>
+            </div>
+            <div id="confirmation-message" style="display: none;">
+                Votre message à bien été envoyé. Merci !
+            </div>
+
+        <footer class="page-footer">
+        </footer>
+    
+        <script src="/js/script.js"></script>
+</body>
+</html>
