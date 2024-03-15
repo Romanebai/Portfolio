@@ -120,7 +120,7 @@ main {
   max-width: 100%;
   margin: auto 4rem 3rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding-bottom: 2rem;
   font-family: 'Abel', sans-serif;
   width: auto;
