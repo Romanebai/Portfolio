@@ -32,6 +32,7 @@ html {
   font-family: 'Abel', sans-serif;
   right: 20px;
   display: flex;
+  z-index: 1;
 
 }
 
@@ -53,12 +54,11 @@ html {
 
 /* MAIN CONTENT */
 main {
-  height: 100%;
+  min-height: 100%;
   margin-top: -50px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  overflow: hidden;
 }
 
 .main-content {
@@ -259,26 +259,22 @@ main {
 /* PROJECT */
 #project {
   width: auto;
-  height: 100vh;
-}
-
-.project-title {
-  font-size: 27px;
-  color: #AB84E5;
-  margin-bottom: 5%;
-  font-family: 'Abel', sans-serif;
-  font-weight: normal;
-}
-
-.project-container {
+  min-height: 100%;
   display: flex;
-  flex-direction: column;
-  height: 100vh;
-  width: 80%;
+  width: 90%;
   margin: auto;
   justify-content: center;
   align-items: center;
   font-family: 'Abel', sans-serif;
+}
+
+.project-title {
+  font-size: 27px;
+  text-align: center;
+  color: #AB84E5;
+  margin-bottom: 5%;
+  font-family: 'Abel', sans-serif;
+  font-weight: normal;
 }
 
 .project-img {
@@ -297,6 +293,7 @@ main {
 	gap: 0.5rem;
 	grid-template-columns: repeat(3, 1fr);
 	max-width: 100%;
+  margin-bottom: 2rem;
 }
 
 .project-figure {
@@ -332,17 +329,18 @@ main {
 	padding: 1rem;
 	color: white;
 	font-size: 2rem;
-	z-index: 1;
 	opacity: 0;
 	transition: opacity 600ms, transform 600ms;
 }
 
 .project-link:is(:hover, :focus) figure::after {
 	opacity: 1;
+
 }
 
 .project-link:is(:hover, :focus) figcaption {
 	opacity: 1;
+  z-index: 4;
 	transition: opacity 600ms;
 }
 
@@ -467,6 +465,13 @@ input:focus, textarea:focus {
   transform: translateY(-0.15em);
 }
 
+#page-footer__text  {
+  text-align: center;
+  background-color: rgb(0 0 0 / 0%);
+  padding: 1rem;
+  color: #ffffff82;
+  font-size: 15px;
+}
 
 /* RESPONSIVE POUR IPHONE */
 
@@ -483,10 +488,13 @@ input:focus, textarea:focus {
   flex-direction: column;
   cursor: pointer;
   padding: 10px;
+  position: fixed;
+  right: 5px;
+  z-index: 1;
 }
 
 .menu-toggle span {
-  background-color: #6a5982;
+  background-color: #b683ff;
   height: 3px;
   width: 25px;
   margin: 4px 5px;
@@ -497,11 +505,11 @@ input:focus, textarea:focus {
   background-color: #6a5982;
   padding-right: 20px;
   border-radius: 12px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .page-header__img-profile {
-  z-index: 2;
+  z-index:3;
 }
 
 .page-header__navigation-list-item {
@@ -510,7 +518,7 @@ margin: 17px;
 
 .page-header__navigation-list-item:hover {
   text-decoration: underline;
-  color: purple;
+  color: rgb(46, 36, 75);
 }
 /* Close btn */
 
@@ -531,7 +539,7 @@ height: 121px;
 }
 
 .main-content__resume {
-  max-width: 346px;
+  width: 95%;;
 }
 
 .main-content__subtitle {
@@ -545,7 +553,6 @@ height: 121px;
 .project-container__navigation {
   display: flex;
   flex-direction: column;
-  overflow-y: scroll;
 }
 
 #about {
@@ -572,8 +579,4 @@ height: 121px;
   margin-top: 5%;
 }
 
-.main {
-  overflow: hidden;
-
-}
 }

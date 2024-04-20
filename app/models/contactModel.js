@@ -7,9 +7,11 @@ function contactModel(name, email, message) {
     return new Promise((resolve, reject) => {
         // Configurer le transporter
         const transporter = nodemailer.createTransport({
-            service: 'localhost', 
-            port: 1025,
-            secure: false, // MailHog fonctionne en non sécurisé
+            service: 'gmail', 
+            auth: {
+                user: process.env.EMAIL,
+                pass: process.env.APP_PSW
+            },
         });
 
         // Options pour l'e-mail

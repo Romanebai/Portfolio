@@ -64,23 +64,46 @@ function form(name, email, message) {
     form(name, email, message); 
 });
 
-// Fonction pour afficher le menu burger
-document.getElementById('mobile-menu').addEventListener('click', function () {
+
+// Fonction pour ouvrir le menu burger
+function openBurgerMenu() {
     const nav = document.querySelector('.page-header__navigation-list');
     nav.classList.toggle('show-page-header__navigation-list');
     const close = document.querySelector('.close');
     close.classList.toggle('show-close');
     const menu = document.querySelector('.menu-toggle');
-    menu.style.opacity = '0';
+    menu.style.display = 'none';
+}
 
-  });
-
-document.getElementById('closeBtn').addEventListener('click', function () {
+// Fonction pour fermer le menu burger
+function closeBurgerMenu() {
+    console.log('je suis dans closeBurgerMenu');
     const nav = document.querySelector('.page-header__navigation-list');
     nav.classList.remove('show-page-header__navigation-list');
     const close = document.querySelector('.close');
-    close.classList.remove('show-close');
+    close.classList.toggle('show-close');
     const menu = document.querySelector('.menu-toggle');
-    menu.style.opacity = '1';
-    
+    menu.style.display = '';
+    console.log('je suis opacity');
+}
+
+// Écouteur d'événement pour ouvrir le menu burger
+document.getElementById('mobile-menu').addEventListener('click', openBurgerMenu);
+
+// Écouteur d'événement pour fermer le menu burger
+
+document.getElementById('closeBtn').addEventListener('click', function(event) {
+    console.log('je suis dans closeBtn')
+    event.preventDefault();
+    closeBurgerMenu();
 });
+
+// Écouteur d'événement pour fermer le menu burger lorsqu'un lien est cliqué
+document.addEventListener('click', function(event) {
+    const nav = document.querySelector('.page-header__navigation-list');
+    if (nav.classList.contains('show-page-header__navigation-list') && !event.target.closest('#mobile-menu')) {
+        closeBurgerMenu();
+    }
+});
+
+
