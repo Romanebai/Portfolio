@@ -2,11 +2,11 @@
 ## using Javascript and node.js
 
 **packages** : 
-cors
-dotenv
-ejs
-express
-nodemailer
+cors  
+dotenv  
+ejs  
+express  
+nodemailer  
 
 *use nodemon index.js to run*
 
