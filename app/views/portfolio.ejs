@@ -9,17 +9,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
-    <title>Portfolio</title>
+    <title>Romane Baï - Portfolio</title>
+    <meta name="description" content="Développeuse Web FullStack à Montpellier, voici mon Portfolio qui réunit mes différents projets.">
 </head>
 <body>
     <!--SECTION HEADER-->
     <header id="page-header">
-        <a href="#page-header"> <img class="page-header__img-profile" src="/img/profile.png" alt="Photo de profil de Romane">
+        <a href="#page-header" aria-label="image de Profil"> <img class="page-header__img-profile" src="/img/profile.png" alt="Photo de profil de Romane">
             
         <nav class="page-header__navigation">
             <ul class="page-header__navigation-list">
@@ -45,6 +43,10 @@
                 <h1 class="main-content__title">Romane Baï</h1>
                 <h2 class="main-content__subtitle">Développeur web fullstack javascript</h2>
                 <p class="main-content__resume">Je suis à la recherche d’un poste de <span>développeur fullstack</span> pour compléter mes compétences et vivre de nouvelles expériences dans une entreprise incroyable.</p>
+            </div>
+            <div class="main-icon__website">
+                <a href="https://github.com/Romanebai" aria-label="lien vers le github"><img src="img/github.png" alt="Icone de github" class="main-icon"></a>
+                <a href="https://www.linkedin.com/in/romanebai/" aria-label="lien vers le linkedin"><img src="img/linkedin.svg" alt="Icone de linkedin" class="main-icon"></a>
             </div>
             <section class="main-skill__section">
                 <div class="main-skill__container">
@@ -96,25 +98,49 @@
                 <h1 class="project-title">Mes projets</h1>
                 <ul class="project-container__navigation">
                     <li>
-                        <a class="project-link" href="">
+                        <a class="project-link" href="https://romanebai.github.io/Steam/" aria-label="Lien pour le github Steam">
                             <figure class="project-figure">
-                                <img class="project-img" src='/img/project/creasand.jpg'>
+                                <img class="project-img" src='/img/project/steam.png' alt="image du projet steam">
+                                <figcaption class="project-figcaption">Steam</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="project-link" href="https://romanebai.github.io/Calculator/" aria-label="Lien pour le github Calculette">
+                            <figure class="project-figure">
+                                <img class="project-img" src='/img/project/calculator.jpg' alt="image du projet calculette">
+                                <figcaption class="project-figcaption">Pink Calculator</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="project-link" href="https://romanebai.github.io/little-game/" aria-label="Lien pour le github pierre feuille ciseaux">
+                            <figure class="project-figure">
+                                <img class="project-img" src='/img/project/game.png' alt="image du projet pierre feuille ciseaux">
+                                <figcaption class="project-figcaption">Pierre Feuille Ciseaux</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="project-link" href="https://github.com/Romanebai" aria-label="Lien pour le github général">
+                            <figure class="project-figure">
+                                <img class="project-img" src='/img/project/creasand.jpg' alt="image du projet de boutique créaSand">
                                 <figcaption class="project-figcaption">Les créas de Sand</figcaption>
                             </figure>
                         </a>
                     </li>
                     <li>
-                        <a class="project-link" href="">
+                        <a class="project-link" href="https://github.com/Romanebai" aria-label="Lien pour le github général">
                             <figure class="project-figure">
-                                <img class="project-img" src='/img/project/dinodiner.jpg'>
+                                <img class="project-img" src='/img/project/dinodiner.jpg' alt="image du projet Dino Diner">
                                 <figcaption class="project-figcaption">Dino Diner</figcaption>
                             </figure>
                         </a>
                     </li>
                     <li>
-                        <a class="project-link" href="">
+                        <a class="project-link" href="https://github.com/Romanebai" aria-label="Lien pour le github général">
                             <figure class="project-figure">
-                                <img class="project-img" src='/img/project/coffee.jpg'>
+                                <img class="project-img" src='/img/project/coffee.jpg' alt="image du projet coffee shop">
                                 <figcaption class="project-figcaption">Coffee Kat</figcaption>
                             </figure>
                         </a>
@@ -145,7 +171,9 @@
                         <textarea id="message" class="contact-form__input message" placeholder="Votre message"></textarea>
                         <p id="errorMessage">Le message est incorrect.</p>
                     </div>
-                    <button class="contact-form__submit">Envoyer</button>
+                    <div class="contact-form__submit-container">
+                        <button class="contact-form__submit">Envoyer</button>
+                    </div>
                 </form>
             </div>
             <div id="confirmation-message" style="display: none;">

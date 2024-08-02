@@ -1,5 +1,5 @@
 /* BODY */
-*{
+* {
   font-size: 1em;
   font-family: 'Inter', sans-serif;
 }
@@ -24,7 +24,11 @@ html {
   position: absolute;
   top: 6px;
   font-size: 22px;
-  right: 10px;
+  right: 4px;
+  padding: 1px 3px;
+  border: 1px solid #a58dcb;
+  color: #a58dcb;;
+  border-radius: 2px;
 }
 
 .page-header__navigation-list {
@@ -50,6 +54,7 @@ html {
   height: 48px;
   margin-left: 20px;
   margin-top:10px ;
+  z-index: 3;
 }
 
 /* MAIN CONTENT */
@@ -102,7 +107,7 @@ main {
   font-size: 18px;
   text-align: center;
   font-weight: 400;
-  color: #ffffff58;
+  color: #ffffff80;
 }
 
 .main-content__resume span {
@@ -123,7 +128,7 @@ main {
   justify-content: center;
   padding-bottom: 2rem;
   font-family: 'Abel', sans-serif;
-  width: auto;
+  font-weight: 800;
 }
 
 .main-skill__item {
@@ -133,6 +138,19 @@ main {
   font-family: 'Abel', sans-serif;
   margin: 1rem;
   width: 227px;
+}
+
+.main-icon__website {
+  display: flex;
+  justify-content: center;
+}
+
+.main-icon {
+  border: rgb(222, 222, 222) 2px solid;
+  background-color: rgb(238, 238, 238); 
+  width: 40px;
+  margin: 50px 20px;
+  border-radius: 100%;
 }
 
 .main-skill__item-title {
@@ -178,7 +196,8 @@ main {
 }
 
 .about-resume {
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   display: flex;
   margin-right: 3rem;
   flex-direction: column;
@@ -234,7 +253,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 3rem;
+  
 }
 
 .about-curriculum__title {
@@ -269,6 +288,7 @@ main {
 }
 
 .project-title {
+  padding: 100px 0 40px 0;
   font-size: 27px;
   text-align: center;
   color: #AB84E5;
@@ -392,8 +412,9 @@ main {
 }
 
 .contact-title { 
-font-size: 1.3rem;
+font-size: 1.5rem;
 margin-bottom: 1rem;
+font-family: 'Abel', sans-serif;
 }
 
 .contact-container {
@@ -420,7 +441,7 @@ margin-bottom: 1rem;
 }
 
 ::placeholder {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Abel', sans-serif;
   font-weight: 600;
   color: #5f6d71;
 }
@@ -435,7 +456,7 @@ margin-bottom: 1rem;
 
 input,
 textarea {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Abel', sans-serif;
   color: #3a373c;
   font-size: 1.1rem;
 }
@@ -446,16 +467,22 @@ input:focus, textarea:focus {
 
 .contact-form__submit {
   height: 2.5rem;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Abel', sans-serif;
   font-weight: 600;
   font-size: 0.9rem;
   padding: 0 3rem;
-  margin-left: 20%;
   margin-top: 2rem;
   border: none;
   border-radius: 3rem;
   background-size: 300% 100%;
   transition: all 0.3s ease-in-out;
+  color: black;
+}
+
+.contact-form__submit-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-form__submit:hover {
@@ -471,7 +498,10 @@ input:focus, textarea:focus {
   padding: 1rem;
   color: #ffffff82;
   font-size: 15px;
+  font-family: 'Abel', sans-serif;
 }
+
+
 
 /* RESPONSIVE POUR IPHONE */
 
@@ -494,22 +524,20 @@ input:focus, textarea:focus {
 }
 
 .menu-toggle span {
-  background-color: #b683ff;
+  background-color: #aaa2b5;
   height: 3px;
-  width: 25px;
+  width: 32px;
   margin: 4px 5px;
+  border-radius: 10px;
 }
 .show-page-header__navigation-list {
   display: flex;
   flex-direction: column;
-  background-color: #6a5982;
+  background:linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(93 76 122) 0%, rgb(56 42 67) 100%);
+  box-shadow: rgb(78 74 81) 0px 0px 1px 1px;
   padding-right: 20px;
-  border-radius: 12px;
+  border-radius: 5px;
   z-index: 2;
-}
-
-.page-header__img-profile {
-  z-index:3;
 }
 
 .page-header__navigation-list-item {
@@ -568,10 +596,11 @@ height: 121px;
 }
 
 .about__img-profile {
-  margin-top: 2rem;
+  margin-top: 100px;
 }
 
 .about-resume {
+  padding: 0 20px;
   margin: auto;
 }
 
@@ -580,3 +609,4 @@ height: 121px;
 }
 
 }
+
