@@ -26,8 +26,7 @@ html {
   font-size: 22px;
   right: 4px;
   padding: 1px 3px;
-  border: 1px solid #a58dcb;
-  color: #a58dcb;;
+  color: #FFFFFF;
   border-radius: 2px;
 }
 
@@ -534,7 +533,7 @@ input:focus, textarea:focus {
   display: flex;
   flex-direction: column;
   background:linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(93 76 122) 0%, rgb(56 42 67) 100%);
-  box-shadow: rgb(78 74 81) 0px 0px 1px 1px;
+  box-shadow: rgb(66 48 79) 0px 0px 1px 1px;
   padding-right: 20px;
   border-radius: 5px;
   z-index: 2;
