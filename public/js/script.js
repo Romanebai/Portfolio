@@ -1,12 +1,12 @@
 
 // Fonction pour envoyer les données du formulaire au serveur
-function form(name, email, message) {
+function form(name, email, message, website) {
     fetch('/contact', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify({ name, email, message })
+        body: JSON.stringify({ name, email, message, website})
     })
     .then(response => {
         if (response.ok) {
@@ -36,6 +36,7 @@ function form(name, email, message) {
         const name = document.getElementById('name').value;
         const email = document.getElementById('email').value;
         const message = document.getElementById('message').value;
+        const website = document.getElementById('website').value;
         
         errorName.style.opacity = "0";
         errorEmail.style.opacity = "0";
@@ -61,7 +62,7 @@ function form(name, email, message) {
         }
     
     
-    form(name, email, message); 
+    form(name, email, message, website); 
 });
 
 

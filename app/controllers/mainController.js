@@ -8,7 +8,13 @@ const mainController = {
 
     
     contact: (req, res) => {
-        const { name, email, message } = req.body;
+        const { name, email, message, website } = req.body;
+
+        //Ajout de la fonctionnalité HoneyPot 
+        if (website && website.trim() !== ''){
+            return res.status(400).json({ message: 'Spam détecté.'});
+        } 
+
         // Appel au modèle pour envoyer l'e-mail
         contactModel(name, email, message)
             .then(() => {
